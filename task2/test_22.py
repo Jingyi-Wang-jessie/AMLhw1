@@ -9,6 +9,7 @@ Goal: test if two divided eight is 0.25, using built-in functions and numpy arra
 """
 
 import numpy as np
+from __future__ import division
 
 def builtin_divide(x1,x2):
     return x1/x2
