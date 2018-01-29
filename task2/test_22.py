@@ -10,15 +10,16 @@ Goal: test if two divided eight is 0.25, using built-in functions and numpy arra
 """
 
 import numpy as np
+import numpy.testing as npt
 
 def builtin_divide(x1,x2):
     return x1/x2
 
 def numpy_divide(x1,x2):
-    return np.divide(np.array([x1]),np.array([x2]))[0]
+    return np.array([x1/x2])
 
 def test_builtin():
     assert builtin_divide(2,8) == 0.25
     
 def test_numpy():
-    assert numpy_divide(2,8) == 0.25
+    npt.assert_array_equal(numpy_divide(2,8),np.array([0.25]))
