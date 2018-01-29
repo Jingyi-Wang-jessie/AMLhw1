@@ -1,0 +1,4 @@
+{
+  "test_22.py::test_builtin": true, 
+  "test_22.py::test_numpy": true
+}
